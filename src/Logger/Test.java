@@ -8,6 +8,7 @@ public class Test {
 		// TODO Auto-generated method stub
 		Logger.getLogger().error("This is a fake error");
 		Logger.getLogger().debug("This is a verbos data");
+		Logger.getLogger().info("This is a real information");
 	}
 
 }
