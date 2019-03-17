@@ -1,1 +1,3 @@
-ERROR: Mon Feb 25 11:26:02 IRST 2019: This is a fake error
+ERROR: Sat Mar 16 10:49:21 IRST 2019: This is a fake error
+DEBUG: Sat Mar 16 10:49:21 IRST 2019: This is a verbos data
+INFO: Sat Mar 16 10:49:21 IRST 2019: This is a real information

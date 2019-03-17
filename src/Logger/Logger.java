@@ -12,9 +12,14 @@ public class Logger {
 		writer = new PrintWriter(new File("log.txt"));
 	}
 	
-	public static Logger getLogger() throws FileNotFoundException {
+	public static Logger getLogger()  {
 		if(loggerInstance == null) {
-			loggerInstance = new Logger();
+			try {
+				loggerInstance = new Logger();
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return loggerInstance;
 	}
