@@ -18,8 +18,9 @@ public class SimpleServer extends Thread {
 	
 	public void run() {
 		try {
-			System.out.println("Server started on port: "+port);
 			serverSocket = new ServerSocket(port);
+			System.out.println("Server started on port: "+port);
+			
 			threads = new ArrayList<>();
 			while(true) {
 				Socket socket = serverSocket.accept();

@@ -27,6 +27,7 @@ public class LengthCalculator extends Thread{
 			
 			int result = str.length();
 			String upper = str.toUpperCase();
+			
 			printer.println(result);
 			printer.println(upper);
 			printer.flush();
