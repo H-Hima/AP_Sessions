@@ -1,0 +1,38 @@
+Select name, age
+from citizens join students on citizen.nid = students.nid
+where age>20 and grade>16
+
+Select name, age
+from citizens
+where age > 20 
+and 
+nid in 
+(
+	Select nid 
+	from students 
+	where grade > 16
+)
+
+Select name, age
+from 
+(
+	select nid, name, age
+	from citizens
+	where age > 20
+) 
+join
+(
+	select nid
+	from students
+	where grade > 16
+)
+on student.nid = citizens.nid
+
+
+
+id
+Select bID
+from ATable
+where ATable.bID = id
+
+SQL
