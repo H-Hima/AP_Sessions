@@ -21,7 +21,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import Logger.Logger;
+import Logger.Logger2;
 
 public class MainPanel extends JPanel implements Drawable{
 	private JButton button;
@@ -155,9 +155,9 @@ public class MainPanel extends JPanel implements Drawable{
 					getGraphics().fillRect(0, 100, 600, 600);
 				}
 				catch (Exception ex) {
-					Logger.getLogger().error(ex.getMessage());
+					Logger2.getLogger().error(ex.getMessage());
 					for(Object object: ex.getStackTrace())
-						Logger.getLogger().error(object.toString());
+						Logger2.getLogger().error(object.toString());
 				}
 			}
 			
@@ -234,9 +234,9 @@ public class MainPanel extends JPanel implements Drawable{
 			G.drawImage(image, thinkness, 180, this);
 		}
 		catch (Exception ex) {
-			Logger.getLogger().error(ex.getMessage());
+			Logger2.getLogger().error(ex.getMessage());
 			for(Object object: ex.getStackTrace())
-				Logger.getLogger().error(object.toString());
+				Logger2.getLogger().error(object.toString());
 		}
 	}
 }

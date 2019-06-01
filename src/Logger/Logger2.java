@@ -5,17 +5,17 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Date;
 
-public class Logger {
-	private static Logger loggerInstance = null;
+public class Logger2 {
+	private static Logger2 loggerInstance = null;
 	PrintWriter writer;
-	private Logger() throws FileNotFoundException {
-		writer = new PrintWriter(new File("log.txt"));
+	private Logger2() throws FileNotFoundException {
+		writer = new PrintWriter(new File("newFile.txt"));
 	}
 	
-	public static Logger getLogger()  {
+	public static Logger2 getLogger()  {
 		if(loggerInstance == null) {
 			try {
-				loggerInstance = new Logger();
+				loggerInstance = new Logger2();
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

@@ -1,3 +1,1 @@
-ERROR: Sat Mar 16 10:49:21 IRST 2019: This is a fake error
-DEBUG: Sat Mar 16 10:49:21 IRST 2019: This is a verbos data
-INFO: Sat Mar 16 10:49:21 IRST 2019: This is a real information
+Error: Mon May 20 11:39:35 IRDT 2019: This is an error which raised from classLoading main function.
