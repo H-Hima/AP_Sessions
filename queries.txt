@@ -35,4 +35,4 @@ Select bID
 from ATable
 where ATable.bID = id
 
-SQL
+SQL2
